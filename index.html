@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Reach Nikhilesh Kumar</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Robotics engineer in Dubai: autonomy and simulation for unmanned ground, aerial, underwater and multi-robot systems. 60-second project showreels, CV and contact.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: one narrow "field brief" column on phones; mission cards go two-up on wide screens. Dark-first. */
+:root {
+  --bg: #0f151b;
+  --surface: #161f27;
+  --line: #26323d;
+  --fg: #e7ecf0;
+  --muted: #93a0ac;
+  --signal: #f2a93b;
+  --signal-ink: #1a1206;
+  --display: "Big Shoulders Display", "Arial Narrow", "Roboto Condensed", sans-serif;
+  --body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  color-scheme: dark;
+}
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --bg: #f1f3f4; --surface: #ffffff; --line: #d8dde2; --fg: #10161c; --muted: #56616c;
+    --signal: #b56a00; --signal-ink: #ffffff; color-scheme: light;
+  }
+}
+:root[data-theme="light"] {
+  --bg: #f1f3f4; --surface: #ffffff; --line: #d8dde2; --fg: #10161c; --muted: #56616c;
+  --signal: #b56a00; --signal-ink: #ffffff; color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 1rem; line-height: 1.55;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--signal); outline-offset: 3px; border-radius: 4px; }
+.page { max-width: 1080px; margin: 0 auto; padding-block: 28px 56px; display: grid; gap: 56px; }
+
+.label { font-family: var(--mono); font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--signal); }
+h1, h2, h3 { font-family: var(--display); font-weight: 800; text-wrap: balance; margin: 0; letter-spacing: .01em; }
+
+/* hero */
+.hero { display: grid; gap: 22px; }
+.event { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; font-family: var(--mono); font-size: .75rem; color: var(--muted); }
+.event .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--signal); box-shadow: 0 0 0 4px color-mix(in srgb, var(--signal) 22%, transparent); }
+.hero h1 { font-size: clamp(3.2rem, 13vw, 6.4rem); line-height: .88; text-transform: uppercase; }
+.hero .role { font-family: var(--display); font-weight: 600; font-size: clamp(1.4rem, 4.6vw, 2rem); color: var(--signal); text-transform: uppercase; letter-spacing: .03em; line-height: 1.05; }
+.thesis { font-size: 1.12rem; max-width: 36rem; margin: 0; }
+.thesis b { font-weight: 600; }
+.actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.btn { display: inline-flex; align-items: center; gap: 8px; min-height: 46px; padding: 0 18px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--fg); text-decoration: none; font-weight: 600; font-size: .95rem; cursor: pointer; font-family: var(--body); }
+.btn.primary { background: var(--signal); color: var(--signal-ink); border-color: var(--signal); }
+.btn svg { width: 18px; height: 18px; flex: none; }
+.btn[aria-disabled="true"] { opacity: .55; cursor: default; }
+
+/* proof strip */
+.proof { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.proof div { padding: 16px 12px 16px 0; display: grid; gap: 2px; }
+.proof div:nth-child(n+3) { border-top: 1px solid var(--line); }
+.proof b { font-family: var(--display); font-size: 2.2rem; line-height: 1; font-variant-numeric: tabular-nums; }
+.proof span { font-size: .82rem; color: var(--muted); }
+@media (min-width: 760px) { .proof { grid-template-columns: repeat(4, minmax(0, 1fr)); } .proof div:nth-child(n+3) { border-top: 0; } }
+
+/* sections */
+.sec-head { display: grid; gap: 8px; margin-bottom: 20px; }
+.sec-head h2 { font-size: clamp(2rem, 7vw, 3rem); text-transform: uppercase; line-height: .95; }
+.sec-head p { margin: 0; color: var(--muted); max-width: 40rem; }
+
+/* mission cards */
+.missions { display: grid; gap: 18px; }
+@media (min-width: 860px) { .missions { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; display: grid; grid-template-rows: auto 1fr; min-width: 0; }
+.shot { position: relative; aspect-ratio: 16 / 9; max-width: 100%; background: #0b1015; display: block; text-decoration: none; }
+.shot img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.shot .code { position: absolute; left: 12px; top: 12px; font-family: var(--mono); font-size: .7rem; letter-spacing: .12em; background: rgba(9, 13, 17, .78); color: #f2f4f6; padding: 5px 9px; border-radius: 6px; }
+.shot .play { position: absolute; right: 12px; bottom: 12px; display: inline-flex; align-items: center; gap: 8px; background: #f2a93b; color: #1a1206; font-weight: 600; font-size: .85rem; padding: 8px 14px 8px 10px; border-radius: 999px; }
+.shot .play svg { width: 18px; height: 18px; }
+.shot[aria-disabled="true"] .play { background: rgba(9, 13, 17, .78); color: #f2f4f6; }
+.body { padding: 18px 18px 20px; display: grid; gap: 12px; align-content: start; }
+.mission { font-family: var(--mono); font-size: .74rem; color: var(--signal); letter-spacing: .06em; text-transform: uppercase; }
+.card h3 { font-size: 1.9rem; line-height: 1; text-transform: uppercase; }
+.card p { margin: 0; }
+.metrics { display: flex; flex-wrap: wrap; gap: 6px 18px; font-family: var(--mono); font-size: .8rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.metrics b { color: var(--fg); font-weight: 500; }
+.algos { display: grid; gap: 6px; padding: 12px 0 2px; border-top: 1px dashed var(--line); }
+.algos div { display: grid; grid-template-columns: minmax(0, 11.5rem) minmax(0, 1fr); gap: 10px; font-size: .86rem; }
+.algos dt { font-weight: 600; }
+.algos dd { margin: 0; }
+.algos .w { color: var(--muted); }
+@media (max-width: 420px) { .algos div { grid-template-columns: minmax(0, 1fr); gap: 0; } }
+.links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+.links a, .links span { font-size: .85rem; font-weight: 600; text-decoration: none; border-bottom: 1px solid var(--signal); padding-bottom: 1px; }
+.links span { border-bottom-color: var(--line); color: var(--muted); font-weight: 500; }
+
+/* method */
+.method { display: grid; gap: 0; counter-reset: step; }
+.method li { list-style: none; display: grid; grid-template-columns: 3.2rem minmax(0, 1fr); gap: 14px; padding: 16px 0; border-top: 1px solid var(--line); }
+.method li:last-child { border-bottom: 1px solid var(--line); }
+.method .n { font-family: var(--display); font-size: 2.4rem; line-height: 1; color: var(--signal); }
+.method h3 { font-size: 1.35rem; text-transform: uppercase; }
+.method p { margin: 4px 0 0; color: var(--muted); font-size: .95rem; }
+.method ol { margin: 0; padding: 0; }
+@media (min-width: 860px) { .method ol { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; } .method li { border-bottom: 1px solid var(--line); } }
+
+/* deep dive */
+.dive { display: grid; gap: 10px; }
+@media (min-width: 760px) { .dive { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.dive a { display: grid; gap: 4px; padding: 16px; border: 1px solid var(--line); border-radius: 12px; text-decoration: none; background: var(--surface); min-width: 0; }
+.dive a b { font-weight: 600; }
+.dive a span { color: var(--muted); font-size: .86rem; overflow-wrap: anywhere; }
+.dive a:hover b { color: var(--signal); }
+
+/* contact */
+.contact { display: grid; gap: 18px; padding: 22px; border-radius: 16px; border: 1px solid var(--line); background: var(--surface); }
+.contact h2 { font-size: clamp(2rem, 7vw, 2.8rem); text-transform: uppercase; line-height: .95; }
+.rows { display: grid; gap: 10px; }
+.row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; justify-content: space-between; padding: 10px 0; border-top: 1px solid var(--line); }
+.row .k { font-family: var(--mono); font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.row .v { font-weight: 600; user-select: all; overflow-wrap: anywhere; min-width: 0; }
+.mini { font-size: .8rem; padding: 6px 12px; min-height: 34px; }
+footer { color: var(--muted); font-size: .8rem; font-family: var(--mono); }
+
+/* QR overlay */
+.qr { position: fixed; inset: 0; z-index: 20; background: rgba(8, 11, 14, .94); display: grid; place-items: center; padding: max(24px, env(safe-area-inset-top, 0px)) max(16px, env(safe-area-inset-right, 0px)) max(24px, env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); }
+.qr .box { display: grid; gap: 14px; justify-items: center; text-align: center; color: #f2f4f6; }
+.qr img { width: min(78vw, 360px); height: auto; background: #fff; border-radius: 18px; padding: 14px; }
+.qr p { margin: 0; font-family: var(--mono); font-size: .85rem; }
+.qr .btn { background: #1d2731; color: #f2f4f6; border-color: #34414d; }
+@media (prefers-reduced-motion: no-preference) {
+  .card { transition: transform .25s ease, border-color .25s ease; }
+  .card:hover { transform: translateY(-3px); border-color: color-mix(in srgb, var(--signal) 45%, var(--line)); }
+}
+</style>
+</head><body>
+
+<main class="page">
+  <header class="hero">
+    <div class="event"><span class="dot" aria-hidden="true"></span><span>Robotics engineer</span><span>Dubai, UAE</span><span>Open to roles and collaborations</span></div>
+    <div>
+      <h1>Nikhilesh<br>Kumar</h1>
+    </div>
+    <div class="role">Robotics engineer · autonomy &amp; simulation</div>
+    <p class="thesis">I build the autonomy behind <b>robots that go where people shouldn't</b>: minefields, open water, the air above a crowd. I also build the simulations that prove they work before anyone deploys them.</p>
+    <div class="actions">
+      <a class="btn primary" href="#missions"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>Watch the 60-second reels</a>
+      <a class="btn" href="https://drive.google.com/file/d/11l-324V3BWR03TJiZ5XVVhID0ZbktFVW/view?usp=sharing" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/></svg>One-page CV</a>
+      <a class="btn" href="https://www.linkedin.com/in/nikhilesh-kumar-bharathi" target="_blank" rel="noopener">LinkedIn</a>
+      <button class="btn" type="button" id="show-qr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 14h3v3h-3zM20 14v.01M14 20h.01M17 20h4v-3"/></svg>Show QR</button>
+    </div>
+  </header>
+
+  <section class="proof" aria-label="Results at a glance">
+    <div><b>4</b><span>robot domains: ground, air, underwater, fleets</span></div>
+    <div><b>0</b><span>false positives on 8 subsea defect types</span></div>
+    <div><b>100%</b><span>area coverage by a 3-robot fleet</span></div>
+    <div><b>267 m</b><span>autonomous GPS mission on real ArduPilot firmware</span></div>
+  </section>
+
+  <section id="missions">
+    <div class="sec-head">
+      <span class="label">Mission files</span>
+      <h2>Five robots, five missions</h2>
+      <p>Each reel runs about a minute and names the algorithms that matter and why they were chosen. Tap a picture to play.</p>
+    </div>
+
+    <div class="missions">
+      <article class="card">
+        <a class="shot" data-video="vajra" href="#missions" aria-label="Play the Vajra reel"><img src="assets/vajra.jpg" alt="RViz view of the Vajra robot driving past a detected anti-personnel mine, its safe path drawn in green" loading="lazy"><span class="code">UGV · EOD</span><span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>60 s</span></a>
+        <div class="body">
+          <span class="mission">Mission: minefield clearance, EOD support</span>
+          <h3>Vajra mine-detection UGV</h3>
+          <p>An autonomous ground robot probes a minefield with simulated ground-penetrating radar, reports every mine to a ground station and replans around it.</p>
+          <div class="metrics"><span><b>2</b> mines found and avoided</span><span><b>1.2 m</b> no-go ring per mine</span><span>ROS 2 · Nav2 · Gazebo</span></div>
+          <dl class="algos">
+            <div><dt>Smac Hybrid A*</dt><dd class="w">Routes a car-like robot can actually drive</dd></div>
+            <div><dt>MPPI controller</dt><dd class="w">Smooth tracking that replans around new hazards</dd></div>
+            <div><dt>EKF + RTAB-Map</dt><dd class="w">Steady position and a lidar map of the field</dd></div>
+          </dl>
+          <div class="links"><span>Code walkthrough on request</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <a class="shot" data-video="rov" href="#missions" aria-label="Play the subsea inspection reel"><img src="assets/rov.jpg" alt="BlueROV2 following a subsea pipeline in NVIDIA Isaac Sim" loading="lazy"><span class="code">ROV · PORT SECURITY</span><span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>60 s</span></a>
+        <div class="body">
+          <span class="mission">Mission: underwater inspection, hull and berth security</span>
+          <h3>Autonomous subsea inspection</h3>
+          <p>A simulated BlueROV2 follows a 124 m pipeline on its own and logs every defect with position and severity.</p>
+          <div class="metrics"><span><b>8/8</b> defects, <b>0</b> false positives</span><span><b>4 cm</b> RMS cross-track</span><span>Isaac Sim · ROS 2</span></div>
+          <dl class="algos">
+            <div><dt>Fossen 6-DOF model</dt><dd class="w">Realistic underwater motion, drag and buoyancy</dd></div>
+            <div><dt>Kalman filter + gating</dt><dd class="w">DVL and USBL fused into one position; bad fixes rejected</dd></div>
+            <div><dt>Line-of-sight guidance</dt><dd class="w">Holds the vehicle on the pipeline track</dd></div>
+          </dl>
+          <div class="links"><span>29-page technical report on request</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <a class="shot" data-video="drone" href="#missions" aria-label="Play the drone reel"><img src="assets/drone.jpg" alt="Quadcopter rendered in Open 3D Engine above a checkerboard ground" loading="lazy"><span class="code">UAV · PATROL</span><span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>60 s</span></a>
+        <div class="body">
+          <span class="mission">Mission: aerial patrol, drone first response</span>
+          <h3>ArduPilot drone in a game engine</h3>
+          <p>Real ArduPilot flight firmware flies a quadcopter inside Open 3D Engine through a ROS 2 bridge I built, on missions over a real map.</p>
+          <div class="metrics"><span><b>267 m</b> waypoint route</span><span><b>400 Hz</b> sensor bridge</span><span>O3DE · ArduPilot SITL</span></div>
+          <dl class="algos">
+            <div><dt>EKF3</dt><dd class="w">Fuses IMU, GPS and compass into a trusted state</dd></div>
+            <div><dt>Cascaded PID</dt><dd class="w">Steady attitude, altitude and position</dd></div>
+            <div><dt>Waypoints + RTL</dt><dd class="w">Flies the plan, then returns and lands itself</dd></div>
+          </dl>
+          <div class="links"><a href="https://nikhilesh-003.github.io/drone-sim-blog/" target="_blank" rel="noopener">Read the article</a></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <a class="shot" data-video="fleet" href="#missions" aria-label="Play the multi-robot reel"><img src="assets/fleet.jpg" alt="RViz map of three robots splitting an arena into coverage zones" loading="lazy"><span class="code">FLEET · AREA SEARCH</span><span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>60 s</span></a>
+        <div class="body">
+          <span class="mission">Mission: area search, perimeter sweeps, event security</span>
+          <h3>Multi-robot coverage &amp; formation</h3>
+          <p>A coordinator splits an area between three robots so no ground is covered twice, then drives them as one V formation.</p>
+          <div class="metrics"><span><b>146/146</b> cells covered</span><span><b>~3 cm</b> mean formation error</span><span>Nav2 × 3</span></div>
+          <dl class="algos">
+            <div><dt>Hungarian algorithm</dt><dd class="w">Gives each robot the zone it reaches fastest</dd></div>
+            <div><dt>Work stealing</dt><dd class="w">Idle robots take work, so nobody waits</dd></div>
+            <div><dt>Look-ahead control</dt><dd class="w">Followers hold their slots in the formation</dd></div>
+          </dl>
+          <div class="links"><a href="https://nikhilesh-003.github.io/multi-robot-blog/" target="_blank" rel="noopener">Read the article</a><a href="https://github.com/Nikhilesh-003/multi-robot-coverage-formation" target="_blank" rel="noopener">Source code</a></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <a class="shot" data-video="venture" href="#missions" aria-label="Play the underwater robot venture reel"><img src="assets/venture.jpg" alt="Underwater cleaning robot pressed against a fouled intake wall" loading="lazy"><span class="code">VENTURE · SUBSEA</span><span class="play"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>60 s</span></a>
+        <div class="body">
+          <span class="mission">Mission: send the robot, not the diver</span>
+          <h3>Underwater intake robot</h3>
+          <p>My venture: autonomous robots that inspect, clean and map the water intakes of power and desalination plants, the dangerous work divers do today.</p>
+          <div class="metrics"><span>Sonar + DVL</span><span>Contact cleaning</span><span>Robots as a service</span></div>
+          <dl class="algos">
+            <div><dt>Sonar-aided SLAM</dt><dd class="w">Maps and localises where cameras can't see</dd></div>
+            <div><dt>Force-controlled cleaning</dt><dd class="w">Just enough contact force to scrape clean</dd></div>
+            <div><dt>3D change detection</dt><dd class="w">Measures fouling visit to visit</dd></div>
+          </dl>
+          <div class="links"><span>Company brief on request</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="body" style="align-content:center; min-height:100%">
+          <span class="mission">Also in industry</span>
+          <h3>Robots that shipped</h3>
+          <p>Industrial AMRs with SLAM and Nav2, mobile bases for semi-humanoid robots, and a medical mobile manipulator that drives to patient rooms and opens doors (I Hub Robotics). Earlier: localization and 3D mapping for a hull-cleaning AUV.</p>
+          <div class="metrics"><span>3 published papers</span><span>IEEE · IET · Data in Brief</span><span>VIT Mechatronics, GPA 9.16</span></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="method">
+    <div class="sec-head">
+      <span class="label">How I work</span>
+      <h2>Simulate, prove, deploy</h2>
+    </div>
+    <ol>
+      <li><span class="n">1</span><div><h3>Build the world</h3><p>A physics-accurate twin of the robot, its sensors and the place it will work: Isaac Sim, Gazebo or O3DE.</p></div></li>
+      <li><span class="n">2</span><div><h3>Prove it in numbers</h3><p>Automated missions with pass/fail metrics, such as coverage, cross-track error and false positives, rerun after every change.</p></div></li>
+      <li><span class="n">3</span><div><h3>Carry it to hardware</h3><p>The same ROS 2 stack and launch files move to the real robot, with fewer surprises in the field.</p></div></li>
+    </ol>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <span class="label">Go deeper</span>
+      <h2>The full record</h2>
+    </div>
+    <div class="dive">
+      <a href="https://nikhilesh-kumar.vercel.app" target="_blank" rel="noopener"><b>Portfolio</b><span>Every project, experience and publication</span></a>
+      <a href="https://github.com/Nikhilesh-003" target="_blank" rel="noopener"><b>GitHub</b><span>github.com/Nikhilesh-003</span></a>
+      <a href="https://drive.google.com/file/d/11l-324V3BWR03TJiZ5XVVhID0ZbktFVW/view?usp=sharing" target="_blank" rel="noopener"><b>One-page CV</b><span>Phone-sized PDF on Google Drive</span></a>
+    </div>
+  </section>
+
+  <section class="contact" aria-labelledby="talk">
+    <span class="label">Easy reach out</span>
+    <h2 id="talk">Let's talk robotics</h2>
+    <div class="rows">
+      <div class="row"><span class="k">LinkedIn</span><a class="v" href="https://www.linkedin.com/in/nikhilesh-kumar-bharathi" target="_blank" rel="noopener">/in/nikhilesh-kumar-bharathi</a></div>
+      <div class="row"><span class="k">Email</span><span class="v" id="email">nikhileshkumar713@gmail.com</span><button class="btn mini" type="button" data-copy="email">Copy</button></div>
+      <div class="row"><span class="k">WhatsApp</span><a class="v" href="https://wa.me/971503504109" target="_blank" rel="noopener">+971 50 350 4109</a></div>
+    </div>
+  </section>
+
+  <footer>Nikhilesh Kumar · Robotics engineer · Dubai, UAE</footer>
+</main>
+
+<div class="qr" id="qr" hidden role="dialog" aria-modal="true" aria-label="QR code for this page">
+  <div class="box">
+    <img src="assets/qr.svg" alt="QR code linking to nikhilesh-003.github.io/connect">
+    <p>Scan to open this page</p>
+    <p style="color:#f2a93b">nikhilesh-003.github.io/connect</p>
+    <button class="btn" type="button" id="close-qr">Close</button>
+  </div>
+</div>
+
+<script>
+// Paste the Google Drive share link for each reel here. Empty = "coming soon".
+const VIDEOS = {
+  vajra: "https://drive.google.com/file/d/1vxL2QZTzmHKH2agZglZyVSuLwoGNEC4A/view?usp=sharing",
+  rov: "https://drive.google.com/file/d/1n6vyz8AIKdjTHkkkIUDOeq-PhE_Y3lba/view?usp=sharing",
+  drone: "https://drive.google.com/file/d/1k4EmYghUPa0BRFTFaDb2Hbvb4hdbhf88/view?usp=sharing",
+  fleet: "https://drive.google.com/file/d/1rdRjbzqrbOLzIECFcxOL6YRHQ8GN1fSV/view?usp=sharing",
+  venture: "https://drive.google.com/file/d/1-QP35VFDEXzXJD_S7ai1nZV4v5L22vK_/view?usp=sharing"
+};
+document.querySelectorAll("[data-video]").forEach((a) => {
+  const url = VIDEOS[a.dataset.video];
+  if (url) { a.href = url; a.target = "_blank"; a.rel = "noopener"; }
+  else { a.setAttribute("aria-disabled", "true"); a.querySelector(".play").lastChild.textContent = "Coming soon";
+         a.addEventListener("click", (e) => e.preventDefault()); }
+});
+const qr = document.getElementById("qr");
+document.getElementById("show-qr").addEventListener("click", () => { qr.hidden = false; document.getElementById("close-qr").focus(); });
+document.getElementById("close-qr").addEventListener("click", () => { qr.hidden = true; });
+qr.addEventListener("click", (e) => { if (e.target === qr) qr.hidden = true; });
+document.addEventListener("keydown", (e) => { if (e.key === "Escape") qr.hidden = true; });
+document.querySelectorAll("[data-copy]").forEach((b) => b.addEventListener("click", async () => {
+  const el = document.getElementById(b.dataset.copy);
+  try { await navigator.clipboard.writeText(el.textContent.trim()); b.textContent = "Copied"; }
+  catch { const r = document.createRange(); r.selectNodeContents(el); const s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = "Selected"; }
+  setTimeout(() => (b.textContent = "Copy"), 1800);
+}));
+</script>
+</body></html>
